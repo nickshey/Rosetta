@@ -1,8 +1,8 @@
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import os
-from keras.datasets import cifar10, cifar100, mnist, fashion_mnist
-from keras.utils import to_categorical
+from tensorflow.keras.datasets import cifar10, cifar100, mnist, fashion_mnist
+from tensorflow.keras.utils import to_categorical
 import numpy as np
 import random
 from scipy import misc
