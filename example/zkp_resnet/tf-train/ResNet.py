@@ -1,6 +1,7 @@
 import time
 from ops import *
 from utils import *
+import os
 
 
 class ResNet(object):
@@ -279,7 +280,7 @@ class ResNet(object):
     def save(self, checkpoint_dir, step):
         checkpoint_dir = os.path.join(checkpoint_dir, self.model_dir)
 
-        print("SAVING CHECKPOINT:", checkpoint_dir)
+        print("SAVING CHECKPOINT:", os.getcwd(),checkpoint_dir)
 
         if not os.path.exists(checkpoint_dir):
             os.makedirs(checkpoint_dir)
