@@ -56,6 +56,7 @@ def check_args(args):
 
     # --checkpoint_dir
     check_folder(args.checkpoint_dir)
+    print("CHECKPOINT DIRECTORY:", args.checkpoint_dir)
 
     # --result_dir
     check_folder(args.log_dir)
